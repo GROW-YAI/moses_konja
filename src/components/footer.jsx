@@ -17,7 +17,7 @@ const Footer = () => {
             <img src={logo} alt="logo" className="w-32 h-32" />
           </div>
 
-          {/* Navigation Links */}
+          {/* Navigation Links..... */}
           <ul className="flex flex-wrap justify-center space-x-6 text-lg">
             <li>
               <a
