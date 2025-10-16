@@ -31,7 +31,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.2 } // Trigger when 20% of the section is in view
+      { threshold: 0.2 } 
     );
 
     // Observe each section
@@ -60,13 +60,18 @@ const Navbar = () => {
       <nav
         className={`menu flex flex-row items-center justify-between text-white ${
           isScrolled
-            ? "bg-slate-950 shadow-lg"
-            : "bg-white bg-opacity-10 backdrop-blur-md"
+            ? "bg-green-100 shadow-lg"
+            : "bg-green-800 bg-opacity-90 backdrop-blur-md"
         } p-2 transition-all duration-300`}
       >
         {/* Brand / Logo */}
-        <div className="text-lg font-bold flex-1 md:flex-none">
-          <img src={logo} alt="logo" className="w-20 h-20" />
+        <div className="text-lg font-bold flex-1 md:flex-none flex items-center">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-16 h-16 rounded-full border-4 border-green-400 shadow-lg bg-white -mt-4"
+            style={{ objectFit: "contain" }}
+          />
         </div>
 
         {/* Navigation Items */}
