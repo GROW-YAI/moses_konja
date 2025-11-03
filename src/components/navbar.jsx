@@ -6,10 +6,9 @@ import { logo } from "../assets";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState(""); // Track active section
+  const [activeSection, setActiveSection] = useState(""); 
 
   useEffect(() => {
-    // Handle scroll event to make the navbar sticky with a black background
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -40,7 +39,7 @@ const Navbar = () => {
       if (section) observer.observe(section);
     });
 
-    return () => observer.disconnect(); // Cleanup observer on unmount
+    return () => observer.disconnect(); 
   }, []);
 
   const handleScrollToSection = (id) => {

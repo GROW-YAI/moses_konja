@@ -147,7 +147,7 @@ const Footer = () => {
                 <BsLinkedin size={28} />
               </a>
               <a
-                href="https://x.com/"
+                href="https://x.com/KonjaMoses"
                 className="text-green-700 hover:text-black transition"
                 aria-label="X"
                 target="_blank"
