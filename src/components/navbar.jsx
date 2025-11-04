@@ -68,7 +68,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-16 h-16 rounded-full border-4 border-green-400 shadow-lg bg-white -mt-4"
+            className="w-16 h-16 rounded-full border-4 border-green-400 shadow-lg bg-white -mt-1"
             style={{ objectFit: "contain" }}
           />
         </div>
